@@ -2,9 +2,11 @@
 import fs from 'fs';
 // import { PDFAcroButton } from 'pdf-lib';
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
+import {ensureDirectoryExistence} from "../Utils/CheckFolderExists.js"
 
 // const getDocument = require( "pdfjs-dist/legacy/build/pdf.mjs");
 // @ts-ignore
+const fileName ="StormcastEternalsTome.pdf"
 async function extractText(pdfPath) {
   const data = new Uint8Array(fs.readFileSync(pdfPath));
   // @ts-ignore
@@ -89,7 +91,8 @@ import pdfPoppler from"pdf-poppler";
    * first string is to take the PDF 
    * And the second is the output
    * */
-  convertPDFToJPG("StormcastEternalsTome.pdf", "./");
+  // await ensureDirectoryExistence("./Images");
+  await convertPDFToJPG(fileName, "./Images");
 
 
 // extractText('StormcastEternalsTome.pdf');
