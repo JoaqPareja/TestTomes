@@ -1,13 +1,13 @@
 
 
 const filename = "StormcastEternalsTome-";
-
 // 2-2889/2025
 let index:string|number;
 const test = (currentNumberFile:number|string)=>import (`../../Json/${filename}${currentNumberFile}.json`).then((str)=>{
   return str
 })
-export default async function Home() {
+ async function Cards() {
+  const cardInformation: { FilenName: string; extractedText: string; }[]=[];
 
   const firstNumberOfUnits=8;
   const lastNumberOfUnits=60;
@@ -19,12 +19,12 @@ export default async function Home() {
         index=i;
       }
     }
-    await test(index).then((str)=>{
-      console.log(str.filename);
-      console.log(str.extracted_text);
+     await test(index).then((str)=>{
+       cardInformation.push({FilenName:str.filename, extractedText:str.extracted_text})
    })
   }
-
+  return cardInformation;
+}
   // const readPath=(text: string)=> '/Json/'+text+".json";
   // const local= fs.readFileSync(readPath("StormcastEternalsTome-08"))
   // console.log(filename)
@@ -33,17 +33,38 @@ export default async function Home() {
   //   const img= "/Images/"+str.filename+".jpg"
   //   console.log(img)
   // })
-  // return (
-  //   // <div> Images\StormcastEternalsTome-08.jpg
-  //   <div>
-  //   <img 
-  //   src={img} 
-  //   alt={tome.extracted_text}  
-  //   width={1800}
-  //   height={1200}/>
 
-  //     {/* // </div> */}
-  //   <div>{tome.extracted_text}</div>
-  //   </div>
-  // );
+
+  export default async function Home(){
+  const obtainCards=  await Cards();
+
+    // console.log();
+
+return(
+<section>
+
+{obtainCards.map(eachCard => {
+  return (
+  <div>
+      <ul>
+        <li>
+      <img 
+          src={"/Images/"+eachCard.FilenName+".jpg"} 
+          alt={"text"}  
+          width={1800} 
+          height={1200}
+          /> 
+          </li>
+          </ul>
+          </div>
+    );  
+  })
+};
+</section>
+)
+          // </section>
+          
+  
+
+{/* <div>{tome.extracted_text}</div> */}
 }

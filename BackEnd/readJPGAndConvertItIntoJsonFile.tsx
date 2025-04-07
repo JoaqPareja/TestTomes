@@ -30,7 +30,7 @@ const convertToJson =async ()=>{//outputJson
     if(i==8||i==9){
     index="0"+i;
     }
-    if(i> 10){
+    if(i>= 10){
       index=0;
       index=i;
     }
