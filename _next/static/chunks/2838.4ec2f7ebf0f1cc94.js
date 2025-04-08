@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2838],{2838:e=>{e.exports=JSON.parse('{"filename":"StormcastEternalsTome-39","extracted_text":"CONCUSSORS"}')}}]);
