@@ -1,0 +1,70 @@
+'use client'
+import Form from 'next/form'
+import React from 'react';
+import { useState } from 'react';
+let index:string|number;
+const filename = "StormcastEternalsTome-";
+
+const testFiles = (currentNumberFile:number|string)=>import (`../../Json/${filename}${currentNumberFile}.json`).then((str)=>{
+  return str
+})
+const cardInformation: { FilenName: string; extractedText: string; }[]=[];
+
+   function Cards() {
+  const firstNumberOfUnits=8;
+  const lastNumberOfUnits=60;
+  for(let i= firstNumberOfUnits; i<lastNumberOfUnits; i++){
+    if(i==8||9){
+      index="0"+i;
+      if(i> 9){
+        index=0;
+        index=i;
+      }
+    }
+    testFiles(index).then( (str)=>{
+        cardInformation.push({FilenName:str.filename, extractedText:str.extracted_text})
+   })
+  }
+  return  cardInformation;
+}
+
+let text: string;
+        export default  function Search() {
+          const [valueName, setLookOutForCard] = useState('');
+          return (
+            <>
+              <label>
+                First name:
+                <input
+                  value={valueName}
+                  onChange={e => setLookOutForCard(e.target.value)}
+                />
+              </label>
+              {
+              Cards().map((eachCard) => {
+                if(valueName==eachCard.FilenName){
+                  text= eachCard.FilenName
+                }
+                      })
+                    }
+              {
+                valueName==text&&
+                  <>
+                    <div key={valueName}>
+                    <img 
+                      src={"/Images/"+valueName+".jpg"} 
+                      alt={"text"}
+                      sizes="100vw"  
+                      style={{
+                          width: '100%',  
+                          height: 'auto',
+                        }}
+                      /> 
+                  </div>
+                </>                  
+            }
+                 
+          </>
+          );
+        }
+    // 'StormcastEternalsTome-08' 
