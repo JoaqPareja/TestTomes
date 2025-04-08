@@ -29,22 +29,30 @@ const cardInformation: { FilenName: string; extractedText: string; }[]=[];
 }
 
 let text: string;
+let valueFile:string;
         export default  function Search() {
           const [valueName, setLookOutForCard] = useState('');
           return (
             <>
+            <div style={{
+                          width: '100vw',  
+                          height: 'auto',
+                        }
+                        }>
               <label>
-                First name:
+                Please search for the desired card:
                 <input
                   value={valueName}
-                  onChange={e => setLookOutForCard(e.target.value)}
+                  onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setLookOutForCard(e.target.value)}
                 />
               </label>
+              </div>
               {
               Cards().map((eachCard) => {
-                if(valueName==eachCard.FilenName){
-                  text= eachCard.FilenName
-                }
+                if(valueName==eachCard.extractedText){
+                  text= eachCard.extractedText;
+                  valueFile =eachCard.FilenName;
+                         }
                       })
                     }
               {
@@ -52,11 +60,11 @@ let text: string;
                   <>
                     <div key={valueName}>
                     <img 
-                      src={"/Images/"+valueName+".jpg"} 
+                      src={"/Images/"+valueFile+".jpg"} 
                       alt={"text"}
-                      sizes="100vw"  
+                      // sizes="100vw"  
                       style={{
-                          width: '100%',  
+                          width: 'auto',  
                           height: 'auto',
                         }}
                       /> 

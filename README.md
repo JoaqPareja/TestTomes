@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Backend commands:
+npx tsx Backend/readJPGAndConvertItIntoJsonFile.tsx
+
+npx tsx Backend/Tomes.tsx
+
 First, run the development server:
 
 ```bash

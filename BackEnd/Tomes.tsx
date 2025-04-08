@@ -32,7 +32,7 @@ async function extractText(pdfPath) {
         }
       });
   
-      const loadPage = async function (/** @type {string | number} */ pageNum) {
+      const loadPage = async function (/** @type {string | number} */ pageNum: string | number) {
         // @ts-ignore
         const page = await doc.getPage(pageNum);
         console.log("# Page " + pageNum);
@@ -92,7 +92,7 @@ import pdfPoppler from"pdf-poppler";
    * And the second is the output
    * */
   // await ensureDirectoryExistence("./Images");
-  await convertPDFToJPG(fileName, "./Images");
+  await convertPDFToJPG(fileName, "./public/Images");
 
 
 // extractText('StormcastEternalsTome.pdf');
