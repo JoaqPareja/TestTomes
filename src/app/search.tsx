@@ -1,7 +1,5 @@
 'use client'
-import Form from 'next/form'
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 let index:string|number;
 const filename = "StormcastEternalsTome-";
 
@@ -64,7 +62,7 @@ let valueFile:string;
                       alt={"text"}
                       // sizes="100vw"  
                       style={{
-                          width: 'auto',  
+                          width: '100%',  
                           height: 'auto',
                         }}
                       /> 
