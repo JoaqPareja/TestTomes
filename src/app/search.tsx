@@ -6,6 +6,28 @@ import React, { useState } from 'react';
 //   return str
 // })
 import StormcastEternalsTomeFile from "../../Json/StormcastEternalsTome.json"
+import './styles.css';
+
+const SearchesMap =()=>{
+  const possibleSearches=["LIBERATORS", "KNIGHT-ARCANUM", "YNDRASTA", "ANNIHILATORS", "WITH METEORIC GRANDHAMMERS", "PROSECUTORS", "STARSTRIKE JAVELINS", "SHOCK HANDAXES", "VIGILORS", "CELESTIAN VORTEX", "DAIS ARCANUM", "GRYPH-STALKER", "LORD-TERMINOS", "RECLUSIANS"]
+  let possibleSearchsPArr=[]
+  for (let i = 0; i < possibleSearches.length; i++) {
+    possibleSearchsPArr.push(
+    <p className="testText" key={possibleSearches[i]}>
+        {possibleSearches[i].toLowerCase()},</p>)
+  }
+  return(
+
+  <div className="allingText" >
+    {possibleSearchsPArr.map(p=>p)}
+    </div>
+    )
+  
+  }
+
+
+  // style={{
+  //   width:"25%", height:"auto"}}
 
 let text: string;
 let valueFile:string;
@@ -25,6 +47,13 @@ let valueFile:string;
                   onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setLookOutForCard(e.target.value)}
                 />
               </label>
+              </div>
+              <div >
+              <p>Posibble searches: </p>
+              <hr />
+               <SearchesMap/>
+               <hr />
+
               </div>
               {
               StormcastEternalsTomeFile.map((eachCard) => {

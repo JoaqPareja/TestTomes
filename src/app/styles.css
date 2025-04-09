@@ -1,0 +1,55 @@
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+} */
+body{
+  background-color: #adadad;
+
+}
+.allingText {
+  
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  text-align: center;
+
+  }
+  .testText{
+
+    width: 100%;
+    /* height: 4rem; */
+    /* padding: 3rem 0.5rem; */
+  }
+  @media only screen and (min-width: 390px) and (max-width: 767px) { 
+    body{
+      font-size: 1.3rem;
+    }
+    .allingText{
+      display: inline;
+      width: 100%;
+      margin:0px;
+
+    }
+
+    .testText{
+      text-align: left;
+      /* align-items:stretch; */
+      display: inline;
+
+        width: 100%;
+        height: 100vw;
+       /* height: 50rem; */ 
+      /* margin: 5px;  */
+      padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+    }
+    
+   }
+
+
+
+
