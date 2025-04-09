@@ -53,8 +53,8 @@ let valueFile:string;
               </div>
               {
               StormcastEternalsTomeFile.map((eachCard) => {
-                if(valueName==eachCard.extracted_text.toLowerCase()){
-                  text= eachCard.extracted_text.toLowerCase();
+                if(valueName==eachCard.extracted_text.slice(0,1)+eachCard.extracted_text.slice(1).toLowerCase()){
+                  text= eachCard.extracted_text.slice(0,1)+eachCard.extracted_text.slice(1).toLowerCase();
                   valueFile = eachCard.filename;
                          }
                       })
