@@ -25,7 +25,7 @@ const   convertImageToText =async(number:number|string)=> {
 
 const convertToJson =async ()=>{//outputJson
   const firstNumberOfUnits=8;
-  const lastNumberOfUnits=60;
+  const lastNumberOfUnits=61;
   let index:string|number;
   let arr=[];
   checkAndAssingImage.forEach(async (str)=>{
