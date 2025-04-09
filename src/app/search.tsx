@@ -40,7 +40,7 @@ let valueFile:string;
                     <div key={valueName}>
                     <img 
                       src={"./Images/"+valueFile+".jpg"} 
-                      alt={"text"}
+                      alt={valueFile}
                       // sizes="100vw"  
                       style={{
                           width: 'auto',  
