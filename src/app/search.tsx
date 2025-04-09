@@ -14,7 +14,7 @@ const SearchesMap =()=>{
   for (let i = 0; i < possibleSearches.length; i++) {
     possibleSearchsPArr.push(
     <p className="testText" key={possibleSearches[i]}>
-        {possibleSearches[i].toLowerCase()},</p>)
+        {possibleSearches[i].slice(0,1)+possibleSearches[i].slice(1).toLowerCase()},</p>)
   }
   return(
 
@@ -24,10 +24,6 @@ const SearchesMap =()=>{
     )
   
   }
-
-
-  // style={{
-  //   width:"25%", height:"auto"}}
 
 let text: string;
 let valueFile:string;
