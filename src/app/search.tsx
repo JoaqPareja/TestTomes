@@ -28,9 +28,9 @@ let valueFile:string;
               </div>
               {
               StormcastEternalsTomeFile.map((eachCard) => {
-                if(valueName==eachCard.extracted_text){
-                  text= eachCard.extracted_text;
-                  valueFile =eachCard.filename;
+                if(valueName==eachCard.extracted_text.toLowerCase()){
+                  text= eachCard.extracted_text.toLowerCase();
+                  valueFile = eachCard.filename;
                          }
                       })
                     }
@@ -43,7 +43,7 @@ let valueFile:string;
                       alt={valueFile}
                       // sizes="100vw"  
                       style={{
-                          width: 'auto',  
+                          width: '100%',  
                           height: 'auto',
                         }}
                       /> 
