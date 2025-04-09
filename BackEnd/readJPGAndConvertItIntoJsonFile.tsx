@@ -8,7 +8,7 @@ const checkAndAssingImage= ["LIBERATORS","VANQUISHERS","VINDICTORS","CELESTANT-P
 "DESOLATORS", "FULMINATORS", "TEMPESTORS", "PRAETORS", "PROSECUTORS",  "STORMDRAKE", "STORMSTRIKE", 
 "HUNTERS", "STARSTRIKE JAVELINS", "SHOCK HANDAXES", "HURRICANE CROSSBOWS", "LONGSTRIKE CROSSBOWS", "VIGILORS", "SOULWORN", "CELESTIAN VORTEX", "DAIS ARCANUM","COMET", "GRYPH-STALKER",  "LORD-TERMINOS", "RECLUSIANS", "IONUS CRYPTOBORN"
 ]
-const currentTome= "StormcastEternalsTome-"
+const currentTome= "StormcastEternalsTome"
 // function filterItems(arr: any[], query: string) {
 //   return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
 // }
@@ -18,7 +18,7 @@ const   convertImageToText =async(number:number|string)=> {
   // const regex= regex.filter(name()=>.test(name) )
   // const re = /ab+c/;
 
-  const ret = await worker.recognize("./public/Images/"+currentTome+number +".jpg");//https://lenguajejs.com/javascript/modulos/dynamic-import/
+  const ret = await worker.recognize("./public/Images/"+currentTome+"-"+number +".jpg");//https://lenguajejs.com/javascript/modulos/dynamic-import/
   await worker.terminate();
   return ret.data.text   
 }
@@ -27,7 +27,7 @@ const convertToJson =async ()=>{//outputJson
   const firstNumberOfUnits=8;
   const lastNumberOfUnits=60;
   let index:string|number;
-
+  let arr=[];
   checkAndAssingImage.forEach(async (str)=>{
     const eachTextOfEachBattleTomeCard:string=str!//https://stackoverflow.com/questions/45194964/how-to-assign-string-undefined-to-string-in-typescript
   for(let i= firstNumberOfUnits; i<=lastNumberOfUnits;i++){
@@ -49,19 +49,22 @@ const convertToJson =async ()=>{//outputJson
           index=0;
           index=i;
         }
-      const fileName=`Json/${currentTome}${(index)}.json`;
       console.log(eachTextOfEachBattleTomeCard)
-      console.log(fileName);
+      // console.log(fileName);
       console.log(index)
-        const jsonData = {
-        filename: `${currentTome}${index}`,
-        extracted_text: eachTextOfEachBattleTomeCard,
-          };
-          ensureDirectoryExistence(fileName)
-        fs.writeFileSync(fileName, JSON.stringify(jsonData, null,2));
+        // const jsonData = {
+          arr.push({filename: `${currentTome}-${index}`,
+            extracted_text: eachTextOfEachBattleTomeCard})
+        
+          // };
         } 
   }
-  
+    const fileName=`Json/${currentTome}.json`;
+
+  ensureDirectoryExistence(fileName)
+  console.log(arr)
+  fs.writeFileSync(fileName, JSON.stringify(arr, null,2));
+
 })
   
 }
