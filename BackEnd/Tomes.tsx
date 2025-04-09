@@ -1,7 +1,7 @@
 // @ts-nocheck
 import fs from 'fs';
 // import { PDFAcroButton } from 'pdf-lib';
-import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
+import { getDocument } from "../pdfjs-dist/legacy/build/pdf.mjs";
 import {ensureDirectoryExistence} from "../Utils/CheckFolderExists.js"
 
 // const getDocument = require( "pdfjs-dist/legacy/build/pdf.mjs");

@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-const filename = "StormcastEternalsTome-";
+// const filename = "StormcastEternalsTome-";
 
 // const testFiles = (currentNumberFile:number|string)=>import (`../../Json/${filename}${currentNumberFile}.json`).then((str)=>{
 //   return str
@@ -39,7 +39,7 @@ let valueFile:string;
                   <>
                     <div key={valueName}>
                     <img 
-                      src={"./Images/"+valueFile+".jpg"} 
+                      src={"/../Images/"+valueFile+".jpg"} 
                       alt={"text"}
                       // sizes="100vw"  
                       style={{

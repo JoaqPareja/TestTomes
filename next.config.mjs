@@ -7,7 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? '/./JoaqPareja/TestTomes/' : '',
+  assetPrefix: isProd ? '/../JoaqPareja/TestTomes/' : '',
   basePath: isProd ? '' : '',
   output: 'export'
 };
