@@ -68,7 +68,7 @@ let valueFile:string;
                       alt={valueFile}
                       // sizes="100vw"  
                       style={{
-                          width: '100%',  
+                          width: 'auto',  
                           height: 'auto',
                         }}
                       /> 
