@@ -53,7 +53,7 @@ const ImgIteration=(valueName:string)=>{
 }
 
 const ImageToBeSearched=(valueName: React.Key | null | undefined)=>{
-setTimeout(()=>{
+
 return(
   <div key={valueName}>
   <img 
@@ -63,7 +63,6 @@ return(
     /> 
 </div>
 )
-},1000)
 }
 const SearchesMap =()=>{
 
