@@ -51,6 +51,10 @@ return(
                   onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setLookOutForCard(e.target.value)}
                 />
               </label>
+
+              </div>
+              <div >
+              <p>Posibble searches: </p>
               <>
               {possibleSearches.map((str)=>{
                 return(
@@ -58,9 +62,6 @@ return(
                 )
             })}      
               </>  
-              </div>
-              <div >
-              <p>Posibble searches: </p>
               <hr />
                {SearchesMap(`${process.env.currentCard}`)}
 
