@@ -1,244 +1,282 @@
 [
   {
     "filename": "StormcastEternalsTome-08",
-    "extracted_text": "LIBERATORS"
+    "extracted_text": "LIBERATORS",
+    "id": 8
   },
   {
     "filename": "StormcastEternalsTome-09",
-    "extracted_text": "VANQUISHERS"
+    "extracted_text": "VANQUISHERS",
+    "id": 9
   },
   {
     "filename": "StormcastEternalsTome-10",
-    "extracted_text": "VINDICTORS"
+    "extracted_text": "VINDICTORS",
+    "id": 10
   },
   {
     "filename": "StormcastEternalsTome-11",
-    "extracted_text": "CELESTANT-PRIME"
-  },
-  {
-    "filename": "StormcastEternalsTome-11",
-    "extracted_text": "COMET"
-  },
-  {
-    "filename": "StormcastEternalsTome-12",
-    "extracted_text": "GARDUS STEEL SOUL"
+    "extracted_text": "CELESTANT-PRIME HAMMER OF SIGMAR",
+    "id": 11
   },
   {
     "filename": "StormcastEternalsTome-13",
-    "extracted_text": "KNIGHT-ARCANUM"
+    "extracted_text": "KNIGHT-ARCANUM",
+    "id": 13
   },
   {
     "filename": "StormcastEternalsTome-15",
-    "extracted_text": "GRYPH-HOUNDS"
-  },
-  {
-    "filename": "StormcastEternalsTome-14",
-    "extracted_text": "KNIGHT-DRACONIS"
-  },
-  {
-    "filename": "StormcastEternalsTome-15",
-    "extracted_text": "JUDICATOR"
-  },
-  {
-    "filename": "StormcastEternalsTome-17",
-    "extracted_text": "RELICTOR"
+    "extracted_text": "KNIGHT-JUDICATOR WITH GRYPH HOUNDS",
+    "id": 15
   },
   {
     "filename": "StormcastEternalsTome-16",
-    "extracted_text": "QUESTOR"
+    "extracted_text": "QUESTOR SOULWORN",
+    "id": 16
   },
   {
-    "filename": "StormcastEternalsTome-19",
-    "extracted_text": "LORD-AQUILOR"
+    "filename": "StormcastEternalsTome-15",
+    "extracted_text": "GRYPH-HOUNDS",
+    "id": 15
+  },
+  {
+    "filename": "StormcastEternalsTome-16",
+    "extracted_text": "KNIGHT-QUESTOR",
+    "id": 16
+  },
+  {
+    "filename": "StormcastEternalsTome-17",
+    "extracted_text": "KNIGHT-RELICTOR",
+    "id": 17
   },
   {
     "filename": "StormcastEternalsTome-18",
-    "extracted_text": "VEXILLOR"
+    "extracted_text": "KNIGHT-VEXILLOR",
+    "id": 18
   },
   {
-    "filename": "StormcastEternalsTome-21",
-    "extracted_text": "ON DRACOTH"
+    "filename": "StormcastEternalsTome-19",
+    "extracted_text": "LORD-AQUILOR",
+    "id": 19
   },
   {
     "filename": "StormcastEternalsTome-20",
-    "extracted_text": "LORD-CELESTANT"
+    "extracted_text": "LORD-CELESTANT",
+    "id": 20
   },
   {
-    "filename": "StormcastEternalsTome-21",
-    "extracted_text": "LORD-CELESTANT"
+    "filename": "StormcastEternalsTome-20",
+    "extracted_text": "LORD-CELESTANT ON STARDRAKE",
+    "id": 20
+  },
+  {
+    "filename": "StormcastEternalsTome-20",
+    "extracted_text": "LORD-CELESTANT ON DRACOTH",
+    "id": 20
   },
   {
     "filename": "StormcastEternalsTome-22",
-    "extracted_text": "BASTIAN"
+    "extracted_text": "BASTIAN CARTHALOS",
+    "id": 22
+  },
+  {
+    "filename": "StormcastEternalsTome-21",
+    "extracted_text": "LORD-CELESTANT ON STARDRAKE",
+    "id": 21
+  },
+  {
+    "filename": "StormcastEternalsTome-21",
+    "extracted_text": "LORD-CELESTANT",
+    "id": 21
+  },
+  {
+    "filename": "StormcastEternalsTome-21",
+    "extracted_text": "LORD-CELESTANT ON DRACOTH",
+    "id": 21
   },
   {
     "filename": "StormcastEternalsTome-24",
-    "extracted_text": "LORD-RELICTOR"
+    "extracted_text": "LORD-RELICTOR",
+    "id": 24
   },
   {
     "filename": "StormcastEternalsTome-23",
-    "extracted_text": "LORD-IMPERATANT"
-  },
-  {
-    "filename": "StormcastEternalsTome-24",
-    "extracted_text": "RELICTOR"
-  },
-  {
-    "filename": "StormcastEternalsTome-26",
-    "extracted_text": "NEAVE'S"
+    "extracted_text": "LORD-IMPERATANT",
+    "id": 23
   },
   {
     "filename": "StormcastEternalsTome-25",
-    "extracted_text": "LORD-VERITANT"
-  },
-  {
-    "filename": "StormcastEternalsTome-27",
-    "extracted_text": "BLACKTALON"
-  },
-  {
-    "filename": "StormcastEternalsTome-28",
-    "extracted_text": "BLACKTALON"
+    "extracted_text": "LORD-VERITANT",
+    "id": 25
   },
   {
     "filename": "StormcastEternalsTome-29",
-    "extracted_text": "VANDUS"
-  },
-  {
-    "filename": "StormcastEternalsTome-28",
-    "extracted_text": "LORAI"
+    "extracted_text": "VANDUS HAMMERHAND",
+    "id": 29
   },
   {
     "filename": "StormcastEternalsTome-31",
-    "extracted_text": "DRAKESWORN"
-  },
-  {
-    "filename": "StormcastEternalsTome-32",
-    "extracted_text": "KARAZAI"
-  },
-  {
-    "filename": "StormcastEternalsTome-37",
-    "extracted_text": "GRYPH-HOUNDS"
+    "extracted_text": "DRAKESWORN TEMPLAR",
+    "id": 31
   },
   {
     "filename": "StormcastEternalsTome-30",
-    "extracted_text": "YNDRASTA"
-  },
-  {
-    "filename": "StormcastEternalsTome-35",
-    "extracted_text": "AETHERWINGS"
+    "extracted_text": "YNDRASTA THE CELESTIAL SPEAR",
+    "id": 30
   },
   {
     "filename": "StormcastEternalsTome-33",
-    "extracted_text": "KRONDYS"
-  },
-  {
-    "filename": "StormcastEternalsTome-39",
-    "extracted_text": "CONCUSSORS"
-  },
-  {
-    "filename": "StormcastEternalsTome-38",
-    "extracted_text": "WITH METEORIC GRANDHAMMERS"
-  },
-  {
-    "filename": "StormcastEternalsTome-36",
-    "extracted_text": "ANNIHILATORS"
+    "extracted_text": "KRONDYS SON OF DRACOTHOIN",
+    "id": 33
   },
   {
     "filename": "StormcastEternalsTome-34",
-    "extracted_text": "LORD-CELESTANT"
+    "extracted_text": "LORD-CELESTANT",
+    "id": 34
   },
   {
-    "filename": "StormcastEternalsTome-41",
-    "extracted_text": "FULMINATORS"
+    "filename": "StormcastEternalsTome-35",
+    "extracted_text": "AETHERWINGS",
+    "id": 35
   },
   {
-    "filename": "StormcastEternalsTome-40",
-    "extracted_text": "DESOLATORS"
+    "filename": "StormcastEternalsTome-34",
+    "extracted_text": "LORD-CELESTANT ON STARDRAKE",
+    "id": 34
   },
   {
-    "filename": "StormcastEternalsTome-43",
-    "extracted_text": "PRAETORS"
+    "filename": "StormcastEternalsTome-34",
+    "extracted_text": "LORD-CELESTANT ON DRACOTH",
+    "id": 34
   },
   {
-    "filename": "StormcastEternalsTome-44",
-    "extracted_text": "PROSECUTORS"
+    "filename": "StormcastEternalsTome-36",
+    "extracted_text": "ANNIHILATORS",
+    "id": 36
   },
   {
-    "filename": "StormcastEternalsTome-45",
-    "extracted_text": "STORMDRAKE"
+    "filename": "StormcastEternalsTome-36",
+    "extracted_text": "ANNIHILATORS WITH METEORIC GRANDHAMMERS",
+    "id": 36
+  },
+  {
+    "filename": "StormcastEternalsTome-37",
+    "extracted_text": "GRYPH-HOUNDS",
+    "id": 37
+  },
+  {
+    "filename": "StormcastEternalsTome-39",
+    "extracted_text": "CONCUSSORS",
+    "id": 39
+  },
+  {
+    "filename": "StormcastEternalsTome-39",
+    "extracted_text": "CONCUSSORS",
+    "id": 39
+  },
+  {
+    "filename": "StormcastEternalsTome-38",
+    "extracted_text": "ANNIHILATORS",
+    "id": 38
+  },
+  {
+    "filename": "StormcastEternalsTome-38",
+    "extracted_text": "ANNIHILATORS WITH METEORIC GRANDHAMMERS",
+    "id": 38
   },
   {
     "filename": "StormcastEternalsTome-42",
-    "extracted_text": "TEMPESTORS"
+    "extracted_text": "TEMPESTORS",
+    "id": 42
   },
   {
-    "filename": "StormcastEternalsTome-47",
-    "extracted_text": "HUNTERS"
+    "filename": "StormcastEternalsTome-40",
+    "extracted_text": "DESOLATORS",
+    "id": 40
+  },
+  {
+    "filename": "StormcastEternalsTome-40",
+    "extracted_text": "DESOLATORS",
+    "id": 40
+  },
+  {
+    "filename": "StormcastEternalsTome-41",
+    "extracted_text": "FULMINATORS",
+    "id": 41
+  },
+  {
+    "filename": "StormcastEternalsTome-42",
+    "extracted_text": "TEMPESTORS",
+    "id": 42
+  },
+  {
+    "filename": "StormcastEternalsTome-41",
+    "extracted_text": "FULMINATORS",
+    "id": 41
+  },
+  {
+    "filename": "StormcastEternalsTome-43",
+    "extracted_text": "PRAETORS",
+    "id": 43
+  },
+  {
+    "filename": "StormcastEternalsTome-45",
+    "extracted_text": "STORMDRAKE GUARD",
+    "id": 45
+  },
+  {
+    "filename": "StormcastEternalsTome-44",
+    "extracted_text": "PROSECUTORS",
+    "id": 44
   },
   {
     "filename": "StormcastEternalsTome-46",
-    "extracted_text": "STORMSTRIKE"
+    "extracted_text": "STORMSTRIKE CHARIOT",
+    "id": 46
   },
   {
-    "filename": "StormcastEternalsTome-49",
-    "extracted_text": "SHOCK HANDAXES"
-  },
-  {
-    "filename": "StormcastEternalsTome-55",
-    "extracted_text": "DAIS ARCANUM"
-  },
-  {
-    "filename": "StormcastEternalsTome-51",
-    "extracted_text": "LONGSTRIKE CROSSBOWS"
-  },
-  {
-    "filename": "StormcastEternalsTome-48",
-    "extracted_text": "STARSTRIKE JAVELINS"
-  },
-  {
-    "filename": "StormcastEternalsTome-52",
-    "extracted_text": "VIGILORS"
-  },
-  {
-    "filename": "StormcastEternalsTome-50",
-    "extracted_text": "HURRICANE CROSSBOWS"
+    "filename": "StormcastEternalsTome-53",
+    "extracted_text": "QUESTOR SOULWORN",
+    "id": 53
   },
   {
     "filename": "StormcastEternalsTome-56",
-    "extracted_text": "COMET"
+    "extracted_text": "EVERBLAZE COMET",
+    "id": 56
   },
   {
-    "filename": "StormcastEternalsTome-53",
-    "extracted_text": "RELICTOR"
-  },
-  {
-    "filename": "StormcastEternalsTome-54",
-    "extracted_text": "CELESTIAN VORTEX"
+    "filename": "StormcastEternalsTome-52",
+    "extracted_text": "VIGILORS",
+    "id": 52
   },
   {
     "filename": "StormcastEternalsTome-57",
-    "extracted_text": "GRYPH-STALKER"
+    "extracted_text": "LORD-VIGILANT ON GRYPH-STALKER",
+    "id": 57
   },
   {
-    "filename": "StormcastEternalsTome-53",
-    "extracted_text": "QUESTOR"
+    "filename": "StormcastEternalsTome-55",
+    "extracted_text": "DAIS ARCANUM",
+    "id": 55
+  },
+  {
+    "filename": "StormcastEternalsTome-54",
+    "extracted_text": "CELESTIAN VORTEX",
+    "id": 54
   },
   {
     "filename": "StormcastEternalsTome-59",
-    "extracted_text": "RECLUSIANS"
+    "extracted_text": "RECLUSIANS",
+    "id": 59
   },
   {
     "filename": "StormcastEternalsTome-58",
-    "extracted_text": "LORD-TERMINOS"
+    "extracted_text": "LORD-TERMINOS",
+    "id": 58
   },
   {
     "filename": "StormcastEternalsTome-60",
-    "extracted_text": "IONUS CRYPTOBORN"
-  },
-  {
-    "filename": "StormcastEternalsTome-61",
-    "extracted_text": "STORMREACH PORTAL"
+    "extracted_text": "IONUS CRYPTOBORN",
+    "id": 60
   }
-
-  
 ]
