@@ -48,8 +48,9 @@ const convertToJson =async ()=>{//outputJson
   // checkAndAssingImage.forEach(async (str)=>{
     // const eachTextOfEachBattleTomeCard:string=checkAndAssingImage[Number(index)]!//https://stackoverflow.com/questions/45194964/how-to-assign-string-undefined-to-string-in-typescript
   // for(let i= firstNumberOfUnits; i<=lastNumberOfUnits;i++){
+
     const stringSplitted=eachTextOfEachBattleTomeCard.split(' ')
-    // console.log(stringSplitted[0])
+    //
 
   
     const currentImageTextFromConvertedPDF= await convertImageToText(index.toString());
@@ -68,28 +69,38 @@ const stringSplittedLength=stringSplitted.length
     // index =Number(index) -1; // Assign it -1 as the number comes up always +1
 // if(currentImageTextFromConvertedPDF.includes(eachTextOfEachBattleTomeCard)){
     // if(){
+    const currentText=[]
+      currentImageTextFromConvertedPDF.split(' ').forEach((strTextFromPDF)=>{
+        if(strTextFromPDF.includes(stringSplitted[0])){
+          currentText.push()
+        }
+        console.log(strTextFromPDF)
+        // console.log(currentImageTextFromConvertedPDF.indexOf(stringSplitted[0]))
+      })
+// if(currentImageTextFromConvertedPDF.indexOf(stringSplitted[0])){
 
-    // console.log(stringSplitted)
-
-      if(currentImageTextFromConvertedPDF.includes(stringSplitted[0])){
-        index =Number(index) -1; // Assign it -1 as the number comes up always +1
-        if(i==8||i==9){
-          index="0"+i;
-          }
-          if(i> 9){
-            index=0;
-            index=i;
-          }
-        console.log(eachTextOfEachBattleTomeCard)
-        // console.log(fileName);
-        console.log(index)
-        arr.push({
-          filename: `${currentTome}-${index}`,
-          extracted_text: str,
-          id: i
-        })
+// }
+      // if(stringSplittedLength ==1&&
+      //   currentImageTextFromConvertedPDF
+      //   .includes(eachTextOfEachBattleTomeCard)){
+      //   index =Number(index) -1; // Assign it -1 as the number comes up always +1
+      //   if(i==8||i==9){
+      //     index="0"+i;
+      //     }
+      //     if(i> 9){
+      //       index=0;
+      //       index=i;
+      //     }
+      //   console.log(eachTextOfEachBattleTomeCard)
+      //   // console.log(fileName);
+      //   console.log(index)
+      //   arr.push({
+      //     filename: `${currentTome}-${index}`,
+      //     extracted_text: str,
+      //     id: i
+      //   })
         
-      }
+      // }
       // console.log(arr)
       //   arrFirstPositions.push({
       //       filename: `${currentTome}-${index}`,
